@@ -1,0 +1,9 @@
+# Node
+node_modules/
+mobile/node_modules/
+
+# Python (future)
+backend/.venv/
+
+# OS
+.DS_Store
