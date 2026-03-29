@@ -37,7 +37,7 @@ export default function CardSwitcher({users}:{users: UserCardProps[]}) {
             />
             <Button
             title="Skip"
-            onPress={() => setUserIndex((c) => Math.min(c + 1, users.length))}
+            onPress={() => setUserIndex((c) => Math.min(c + 1, users.length - 1))}
             />
              </View>
         </View>
