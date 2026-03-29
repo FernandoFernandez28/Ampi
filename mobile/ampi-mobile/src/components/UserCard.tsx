@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Image, Dimensions } from "react-native"
 import React from "react";
 
-type UserCarProps = {
+export type UserCardProps = {
     name: string;
     pronouns: string;
     age: string;
@@ -14,7 +14,7 @@ type UserCarProps = {
 
 export const profileCardWidth = Dimensions.get('screen').width * 0.8;
 
-export default function UserCard({name, role, age, pronouns ,genres, location}: UserCarProps) {
+export default function UserCard({name, role, age, pronouns ,genres, location}: UserCardProps) {
       return (
     <View style={styles.container}>
       <Image style={styles.image} source={ require('./photo1.jpeg')}/>
