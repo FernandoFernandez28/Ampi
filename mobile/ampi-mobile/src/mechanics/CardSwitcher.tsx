@@ -3,12 +3,6 @@ import UserCard from '@/components/UserCard';
 import { UserCardProps } from "@/components/UserCard";
 import React, { useEffect, useMemo, useState } from "react";
 
-// const userSet = useMemo(() => {
-//     return 
-// }, []);
-
-
-
 export default function CardSwitcher({users}:{users: UserCardProps[]}) {
 
     const [userIndex, setUserIndex] = useState<number>(0);

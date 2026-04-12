@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, Image, Dimensions } from "react-native"
-import React from "react";
+import React, { useState } from "react";
 
 export type UserCardProps = {
     name: string;
@@ -8,7 +8,7 @@ export type UserCardProps = {
     role: string;
     genres: string[];
     location: string;
-    image: string;
+    image: any;
 }
 
 // const image1 = require('./photo1.jpeg');
@@ -16,9 +16,12 @@ export type UserCardProps = {
 export const profileCardWidth = Dimensions.get('screen').width * 0.8;
 
 export default function UserCard({name, role, age, pronouns ,genres, location, image}: UserCardProps) {
+
+  // const image1 = require("./../../assets/images/profileCard/sofi.jpeg");
       return (
     <View style={styles.container}>
-      <Image style={styles.image} source={ require('./../../assets/images/profileCard/fer.jpeg') } />
+      <Image style={styles.image} source={ image } />
+      {/* <Image style={styles.image} source={ require('./../../assets/images/profileCard/fer.jpeg') } /> */}
       <View style={styles.titleRow}>
         <Text style={styles.name}>{name}</Text>
 
