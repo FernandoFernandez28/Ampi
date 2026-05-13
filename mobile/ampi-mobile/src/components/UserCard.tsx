@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
     width: profileCardWidth,
     height: profileCardWidth * 1.67,
     overflow: 'hidden',
+    margin: 10
   },
 
   titleRow: {
