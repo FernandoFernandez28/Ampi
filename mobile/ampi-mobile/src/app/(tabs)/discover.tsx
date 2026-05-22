@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, Dimensions, ScrollView } from 'react-native';
-import UserCard from '@/components/UserCard';
 import CardSwitcher from '@/mechanics/CardSwitcher';
+import { mockData } from '@/database/mock';
 
 export const profileCardWidth = Dimensions.get('screen').width * 0.8;
 
@@ -10,14 +10,10 @@ export default function Discovery() {
 
         <View  style={styles.container}>
             <View>
-              <CardSwitcher users={[
-                { name:"Fernando", role:"Vocalist", pronouns:'he/him', age:'23', genres:["indie", "rock"], location: "London", image: require("./../../../assets/images/profileCard/fer.jpeg")},
-                { name:"Molly", role:"Vocalist", pronouns:'she/her', age:'22', genres:["alt", "indie"], location: "London", image: require("./../../../assets/images/profileCard/molly.jpeg")},
-                { name:"Sofia", role:"Vocalist", pronouns:'she/her', age:'19', genres:["r&b", "pop"], location: "London", image: require("./../../../assets/images/profileCard/sofi.jpeg")}
-              ]}/>
+              <CardSwitcher users={mockData}/>
 
             </View>
-            <View style={styles.promptContainer}>
+            {/* <View style={styles.promptContainer}>
                   <Text>Prompt 1</Text>
             </View>
             <View style={styles.promptContainer}>
@@ -25,7 +21,7 @@ export default function Discovery() {
             </View>
             <View style={styles.promptContainer}>
                   <Text>Prompt 3</Text>
-            </View>
+            </View> */}
         </View>
       </ScrollView>
     )

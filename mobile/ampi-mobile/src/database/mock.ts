@@ -1,0 +1,5 @@
+export const mockData = [
+    {name:"Fernando", role:"Vocalist", pronouns:'he/him', age:'23', genres:["indie", "rock"], location: "London", image: require("./../../assets/images/profileCard/fer.jpeg"), prompts: [{heading: "Looking For", response: "Guitarist"}, {heading: "Fave Artist(s)", response: "Omar Apollo"}, {heading: "Biggest Inspiration", response: "Bruno Mars"}]},
+    { name:"Molly", role:"Vocalist", pronouns:'she/her', age:'22', genres:["alt", "indie"], location: "London", image: require("./../../assets/images/profileCard/molly.jpeg"), prompts: [{heading: "Looking For", response: "Drummer"}, {heading: "My Best Skill", response: "Songwriting"}, {heading: "My Proudest Gig", response: "Royal Albert Hall"}]},
+    { name:"Sofia", role:"Vocalist", pronouns:'she/her', age:'19', genres:["r&b", "pop"], location: "London", image: require("./../../assets/images/profileCard/sofi.jpeg"), prompts: [{heading: "Looking For", response: "Producer"}, {heading: "Fave Song to Perform", response: "Love by Keyshia Cole"}, {heading: "If I'm Not Singing I'm", response: "Playing air drums"}]}
+]

@@ -1,9 +1,9 @@
 import { View, Button, Text, StyleSheet, Image, Dimensions } from "react-native";
-import UserCard from '@/components/UserCard';
-import { UserCardProps } from "@/components/UserCard";
+import UserCard from '@/components/DiscoverUserProfile';
+import { UserProfile } from "@/data/user";
 import React, { useEffect, useMemo, useState } from "react";
 
-export default function CardSwitcher({users}:{users: UserCardProps[]}) {
+export default function CardSwitcher({users}:{users: UserProfile[]}) {
 
     const [userIndex, setUserIndex] = useState<number>(0);
     
